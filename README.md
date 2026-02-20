@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+🚀 Data Insights Hub
 
-## Project info
+This project is a simple and practical platform for automated data analysis. The goal is to help users quickly understand their dataset without spending hours on manual exploratory analysis.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The system allows users to upload a dataset and automatically generates useful statistics, visualizations, and insights. It is designed to make data analysis faster and easier, especially for beginners, students, and non-technical users.
 
-## How can I edit this code?
+📌 Why I built this
 
-There are several ways of editing your application.
+In many real-world situations, a lot of time is spent just trying to understand the data before building any machine learning model. This includes checking missing values, distributions, correlations, and possible issues.
 
-**Use Lovable**
+I built this project to automate that process and make it more efficient. Instead of doing everything manually, the system provides a structured and guided workflow.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+⚙️ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+Upload datasets (CSV format)
 
-**Use your preferred IDE**
+Automatic exploratory data analysis
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Summary statistics for numeric columns
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Data preview
 
-Follow these steps:
+Correlation analysis
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Interactive visualizations
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Missing value detection
 
-# Step 3: Install the necessary dependencies.
-npm i
+Distribution plots
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Basic data insights
 
-**Edit a file directly in GitHub**
+The platform is designed to be simple, clean, and easy to use.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📊 How it works
 
-**Use GitHub Codespaces**
+The user uploads a dataset.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The system reads the data and checks the structure.
 
-## What technologies are used for this project?
+It generates summary statistics and visualizations.
 
-This project is built with:
+Important relationships and patterns are highlighted.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The user can explore the dashboard to understand the dataset better.
 
-## How can I deploy this project?
+🛠️ Tech Stack
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Python
 
-## Can I connect a custom domain to my Lovable project?
+Pandas
 
-Yes, you can!
+NumPy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Matplotlib
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Seaborn
+
+Streamlit
+
+🚀 Getting Started
+Clone the repository
+git clone https://github.com/PillaiNemo/data-insights-hub.git
+Install dependencies
+pip install -r requirements.txt
+Run the application
+streamlit run app.py
+📂 Project Structure
+data-insights-hub/
+│
+├── app.py
+├── requirements.txt
+├── datasets/
+└── utils/
+📌 Future Improvements
+
+Some ideas for future work:
+
+Support for larger datasets
+
+More advanced visualizations
+
+Model recommendations
+
+Automated anomaly detection
+
+AI-based insight generation
+
+Report generation and download
+
+🙌 Acknowledgements
+
+This project was built as part of a Generative AI challenge focused on real-world problem solving and engineering.
