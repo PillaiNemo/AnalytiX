@@ -1,86 +1,48 @@
 **Demo Link**:
 https://analytixdata.lovable.app
 
-**Data Insights Hub**
-This project is a web application that automates basic exploratory data analysis. It allows a user to upload a dataset and quickly understand its structure, quality, and patterns through statistics and visualizations.
+**Detailed Project Documentation**
 
-The goal of this project is to reduce the time required to manually explore data before building machine learning models.
+Data Insights Hub
+
+**Introduction**
+
+Data Insights Hub is a web application that automates basic exploratory data analysis. It allows users to upload a dataset and quickly understand its structure, data quality, and relationships through statistics and visualizations.
 
 **Problem**
-In most data science workflows, a large amount of time is spent understanding the dataset. This includes checking missing values, data types, distributions, and correlations. These steps are repetitive and often slow, especially for beginners.
 
-This project provides a simple and structured way to perform these tasks automatically.
+Exploratory data analysis is a repetitive and time-consuming step in most data workflows. Beginners often find it difficult to check missing values, distributions, and correlations manually. This project aims to simplify and automate these steps.
 
-**Features**
-The application currently supports:
+**Objectives**
 
-- Uploading CSV datasets
-- Displaying a data preview
-- Summary statistics for numeric columns
-- Detection of missing values
-- Correlation analysis
-- Disribution plots and histograms
-- Interactive dashboard for exploration
-- The interface is designed to be simple and easy to use.
+The main goals of this project are to automate data profiling, provide clear visualizations, and improve data understanding before model building. The system is designed to be simple and easy to use.
 
-**How it works**
-The user uploads a dataset in CSV format.
+**System Overview**
 
-- The system reads the file and analyzes its structure.
-- It generates summary statistics and visualizations.
-- The results are displayed in a dashboard.
-- The user can explore different sections to understand the data.
+The user uploads a dataset, and the system automatically performs analysis and generates visual insights. The results are displayed in an interactive dashboard.
 
-**Technology stack**
-_Backend and data processing:_
-Python
-Pandas
-NumPy
+**Workflow**
 
-_Visualization:_
-Matplotlib
-Seaborn
+Upload dataset → Data processing → Statistical analysis → Visualization → Dashboard.
 
-_Interface:_
-Streamlit
-Installation
+**Technology**
 
-**Clone the repository:**
-git clone https://github.com/PillaiNemo/AnalytiX.git
+Python, Pandas, NumPy, Matplotlib, Seaborn, and Streamlit are used to build the system.
 
-**Move into the project folder:**
-cd AnalytiX
+**Challenges**
 
-**Install dependencies:**
-pip install -r requirements.txt
+Handling different dataset structures, managing missing values, and designing a simple user interface were key challenges.
 
-**Run the application:**
-streamlit run app.py
+**Future Work**
 
-**Project structure**
+Future improvements include anomaly detection, automated model recommendation, report generation, and support for larger datasets.
 
-data-insights-hub
-│
-├── app.py
-├── requirements.txt
-├── datasets
-└── utils
+**Conclusion**
 
-**Limitations**
-- The current version focuses only on basic exploratory analysis. It does not include advanced features such as anomaly detection, automated model training, or report generation.
-
-**Future work**
-Possible improvements include:
-
-- Support for larger datasets
-- Additional visualizations
-- Automated anomaly detection
-- Model recommendation
-
-Downloadable reports
+This project demonstrates how automation can reduce manual effort in exploratory data analysis and improve efficiency.
 
 Integration with databases
 
-Acknowledgement
+**Acknowledgement**
 
 This project was developed as part of a generative AI challenge focused on building practical and functional systems.
