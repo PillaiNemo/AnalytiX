@@ -1,96 +1,86 @@
-🚀 Data Insights Hub
-
 **Demo Link**:
 https://analytixdata.lovable.app
 
-This project is a simple and practical platform for automated data analysis. The goal is to help users quickly understand their dataset without spending hours on manual exploratory analysis.
+**Data Insights Hub**
+This project is a web application that automates basic exploratory data analysis. It allows a user to upload a dataset and quickly understand its structure, quality, and patterns through statistics and visualizations.
 
-The system allows users to upload a dataset and automatically generates useful statistics, visualizations, and insights. It is designed to make data analysis faster and easier, especially for beginners, students, and non-technical users.
+The goal of this project is to reduce the time required to manually explore data before building machine learning models.
 
-📌 Why I built this
+**Problem**
+In most data science workflows, a large amount of time is spent understanding the dataset. This includes checking missing values, data types, distributions, and correlations. These steps are repetitive and often slow, especially for beginners.
 
-In many real-world situations, a lot of time is spent just trying to understand the data before building any machine learning model. This includes checking missing values, distributions, correlations, and possible issues.
+This project provides a simple and structured way to perform these tasks automatically.
 
-I built this project to automate that process and make it more efficient. Instead of doing everything manually, the system provides a structured and guided workflow.
+**Features**
+The application currently supports:
 
-⚙️ Features
+- Uploading CSV datasets
+- Displaying a data preview
+- Summary statistics for numeric columns
+- Detection of missing values
+- Correlation analysis
+- Disribution plots and histograms
+- Interactive dashboard for exploration
+- The interface is designed to be simple and easy to use.
 
-Upload datasets (CSV format)
+**How it works**
+The user uploads a dataset in CSV format.
 
-Automatic exploratory data analysis
+- The system reads the file and analyzes its structure.
+- It generates summary statistics and visualizations.
+- The results are displayed in a dashboard.
+- The user can explore different sections to understand the data.
 
-Summary statistics for numeric columns
-
-Data preview
-
-Correlation analysis
-
-Interactive visualizations
-
-Missing value detection
-
-Distribution plots
-
-Basic data insights
-
-The platform is designed to be simple, clean, and easy to use.
-
-📊 How it works
-
-The user uploads a dataset.
-
-The system reads the data and checks the structure.
-
-It generates summary statistics and visualizations.
-
-Important relationships and patterns are highlighted.
-
-The user can explore the dashboard to understand the dataset better.
-
-🛠️ Tech Stack
-
+**Technology stack**
+_Backend and data processing:_
 Python
-
 Pandas
-
 NumPy
 
+_Visualization:_
 Matplotlib
-
 Seaborn
 
+_Interface:_
 Streamlit
+Installation
 
-🚀 Getting Started
-Clone the repository
-git clone https://github.com/PillaiNemo/data-insights-hub.git
-Install dependencies
+**Clone the repository:**
+git clone https://github.com/PillaiNemo/AnalytiX.git
+
+**Move into the project folder:**
+cd AnalytiX
+
+**Install dependencies:**
 pip install -r requirements.txt
-Run the application
+
+**Run the application:**
 streamlit run app.py
-📂 Project Structure
-data-insights-hub/
+
+**Project structure**
+
+data-insights-hub
 │
 ├── app.py
 ├── requirements.txt
-├── datasets/
-└── utils/
-📌 Future Improvements
+├── datasets
+└── utils
 
-Some ideas for future work:
+**Limitations**
+- The current version focuses only on basic exploratory analysis. It does not include advanced features such as anomaly detection, automated model training, or report generation.
 
-Support for larger datasets
+**Future work**
+Possible improvements include:
 
-More advanced visualizations
+- Support for larger datasets
+- Additional visualizations
+- Automated anomaly detection
+- Model recommendation
 
-Model recommendations
+Downloadable reports
 
-Automated anomaly detection
+Integration with databases
 
-AI-based insight generation
+Acknowledgement
 
-Report generation and download
-
-🙌 Acknowledgements
-
-This project was built as part of a Generative AI challenge focused on real-world problem solving and engineering.
+This project was developed as part of a generative AI challenge focused on building practical and functional systems.
