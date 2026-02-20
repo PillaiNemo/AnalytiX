@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 60% 6%;
+    --foreground: 220 30% 93%;
+    --card: 222 45% 11%;
+    --card-foreground: 220 30% 93%;
+    --popover: 222 45% 11%;
+    --popover-foreground: 220 30% 93%;
+    --primary: 183 100% 50%;
+    --primary-foreground: 220 60% 6%;
+    --secondary: 42 100% 50%;
+    --secondary-foreground: 220 60% 6%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 214 25% 46%;
+    --accent: 153 100% 50%;
+    --accent-foreground: 220 60% 6%;
+    --destructive: 354 80% 63%;
+    --destructive-foreground: 220 30% 93%;
+    --border: 219 40% 20%;
+    --input: 219 40% 20%;
+    --ring: 183 100% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 220 60% 6%;
+    --sidebar-foreground: 220 30% 93%;
+    --sidebar-primary: 183 100% 50%;
+    --sidebar-primary-foreground: 220 60% 6%;
+    --sidebar-accent: 219 40% 20%;
+    --sidebar-accent-foreground: 220 30% 93%;
+    --sidebar-border: 219 40% 20%;
+    --sidebar-ring: 183 100% 50%;
+
+    /* AnalytiX tokens */
+    --ax-bg: #080C18;
+    --ax-card: #0F1629;
+    --ax-card-alt: #0A0E1A;
+    --ax-border: #1E2D4A;
+    --ax-cyan: #00F5FF;
+    --ax-amber: #FFB800;
+    --ax-green: #00FF88;
+    --ax-red: #FF4560;
+    --ax-muted: #5A7090;
+    --ax-text: #E8EDF5;
+    --ax-text-secondary: #A0B0C8;
+    --ax-glow-cyan: 0 0 16px rgba(0, 245, 255, 0.12);
+    --ax-glow-cyan-strong: 0 0 24px rgba(0, 245, 255, 0.2);
+  }
+
+  .dark {
+    --background: 220 60% 6%;
+    --foreground: 220 30% 93%;
+    --card: 222 45% 11%;
+    --card-foreground: 220 30% 93%;
+    --popover: 222 45% 11%;
+    --popover-foreground: 220 30% 93%;
+    --primary: 183 100% 50%;
+    --primary-foreground: 220 60% 6%;
+    --secondary: 42 100% 50%;
+    --secondary-foreground: 220 60% 6%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 214 25% 46%;
+    --accent: 153 100% 50%;
+    --accent-foreground: 220 60% 6%;
+    --destructive: 354 80% 63%;
+    --destructive-foreground: 220 30% 93%;
+    --border: 219 40% 20%;
+    --input: 219 40% 20%;
+    --ring: 183 100% 50%;
+    --sidebar-background: 220 60% 6%;
+    --sidebar-foreground: 220 30% 93%;
+    --sidebar-primary: 183 100% 50%;
+    --sidebar-primary-foreground: 220 60% 6%;
+    --sidebar-accent: 219 40% 20%;
+    --sidebar-accent-foreground: 220 30% 93%;
+    --sidebar-border: 219 40% 20%;
+    --sidebar-ring: 183 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    background: var(--ax-bg);
+    color: var(--ax-text);
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* AnalytiX Animations */
+@keyframes ax-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+@keyframes ax-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ax-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes ax-fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ax-pulse {
+  animation: ax-pulse 2s ease-in-out infinite;
+}
+
+.ax-spin {
+  animation: ax-spin 1s linear infinite;
+}
+
+.ax-shimmer {
+  background: linear-gradient(90deg, var(--ax-card) 25%, var(--ax-border) 50%, var(--ax-card) 75%);
+  background-size: 200% 100%;
+  animation: ax-shimmer 1.5s infinite;
+}
+
+.ax-fadeUp {
+  animation: ax-fadeUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+/* Font utilities */
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-mono-jb {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ax-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ax-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ax-muted);
+}
