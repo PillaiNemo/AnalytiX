@@ -1,5 +1,8 @@
 🚀 Data Insights Hub
 
+**Demo Link**:
+https://analytixdata.lovable.app
+
 This project is a simple and practical platform for automated data analysis. The goal is to help users quickly understand their dataset without spending hours on manual exploratory analysis.
 
 The system allows users to upload a dataset and automatically generates useful statistics, visualizations, and insights. It is designed to make data analysis faster and easier, especially for beginners, students, and non-technical users.
